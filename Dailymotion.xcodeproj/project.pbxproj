@@ -11,6 +11,15 @@
 		5E7B063E282FB91500E91C2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B063D282FB91500E91C2D /* ContentView.swift */; };
 		5E7B0640282FB91900E91C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B063F282FB91900E91C2D /* Assets.xcassets */; };
 		5E7B0643282FB91900E91C2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B0642282FB91900E91C2D /* Preview Assets.xcassets */; };
+		5E7B064B282FB94500E91C2D /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B064A282FB94500E91C2D /* ChannelView.swift */; };
+		5E7B064D282FB95900E91C2D /* ChannelVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B064C282FB95900E91C2D /* ChannelVideosView.swift */; };
+		5E7B064F282FB96900E91C2D /* VideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B064E282FB96900E91C2D /* VideoDetailsView.swift */; };
+		5E7B0651282FB97700E91C2D /* VideoPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0650282FB97700E91C2D /* VideoPlaybackView.swift */; };
+		5E7B0655282FBBB300E91C2D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0654282FBBB300E91C2D /* NetworkManager.swift */; };
+		5E7B0657282FC05F00E91C2D /* ChannelViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0656282FC05F00E91C2D /* ChannelViewData.swift */; };
+		5E7B0659282FC99200E91C2D /* ChannelVideosViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0658282FC99200E91C2D /* ChannelVideosViewData.swift */; };
+		5E7B065D282FFD7C00E91C2D /* VideoDetailsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B065C282FFD7C00E91C2D /* VideoDetailsViewData.swift */; };
+		5E7B065F28300D5A00E91C2D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B065E28300D5A00E91C2D /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		5E7B063D282FB91500E91C2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E7B063F282FB91900E91C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E7B0642282FB91900E91C2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E7B064A282FB94500E91C2D /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		5E7B064C282FB95900E91C2D /* ChannelVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVideosView.swift; sourceTree = "<group>"; };
+		5E7B064E282FB96900E91C2D /* VideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsView.swift; sourceTree = "<group>"; };
+		5E7B0650282FB97700E91C2D /* VideoPlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaybackView.swift; sourceTree = "<group>"; };
+		5E7B0654282FBBB300E91C2D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5E7B0656282FC05F00E91C2D /* ChannelViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewData.swift; sourceTree = "<group>"; };
+		5E7B0658282FC99200E91C2D /* ChannelVideosViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVideosViewData.swift; sourceTree = "<group>"; };
+		5E7B065C282FFD7C00E91C2D /* VideoDetailsViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewData.swift; sourceTree = "<group>"; };
+		5E7B065E28300D5A00E91C2D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,9 @@
 		5E7B063A282FB91500E91C2D /* Dailymotion */ = {
 			isa = PBXGroup;
 			children = (
+				5E7B0653282FBB9D00E91C2D /* Services */,
+				5E7B0652282FBB9600E91C2D /* Models */,
+				5E7B0649282FB92D00E91C2D /* Views */,
 				5E7B063B282FB91500E91C2D /* DailymotionApp.swift */,
 				5E7B063D282FB91500E91C2D /* ContentView.swift */,
 				5E7B063F282FB91900E91C2D /* Assets.xcassets */,
@@ -65,6 +86,36 @@
 				5E7B0642282FB91900E91C2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5E7B0649282FB92D00E91C2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B064A282FB94500E91C2D /* ChannelView.swift */,
+				5E7B064C282FB95900E91C2D /* ChannelVideosView.swift */,
+				5E7B064E282FB96900E91C2D /* VideoDetailsView.swift */,
+				5E7B0650282FB97700E91C2D /* VideoPlaybackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5E7B0652282FBB9600E91C2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B0656282FC05F00E91C2D /* ChannelViewData.swift */,
+				5E7B0658282FC99200E91C2D /* ChannelVideosViewData.swift */,
+				5E7B065C282FFD7C00E91C2D /* VideoDetailsViewData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E7B0653282FBB9D00E91C2D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B0654282FBBB300E91C2D /* NetworkManager.swift */,
+				5E7B065E28300D5A00E91C2D /* Service.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7B064D282FB95900E91C2D /* ChannelVideosView.swift in Sources */,
+				5E7B0659282FC99200E91C2D /* ChannelVideosViewData.swift in Sources */,
+				5E7B064F282FB96900E91C2D /* VideoDetailsView.swift in Sources */,
+				5E7B064B282FB94500E91C2D /* ChannelView.swift in Sources */,
+				5E7B0655282FBBB300E91C2D /* NetworkManager.swift in Sources */,
+				5E7B065D282FFD7C00E91C2D /* VideoDetailsViewData.swift in Sources */,
 				5E7B063E282FB91500E91C2D /* ContentView.swift in Sources */,
 				5E7B063C282FB91500E91C2D /* DailymotionApp.swift in Sources */,
+				5E7B065F28300D5A00E91C2D /* Service.swift in Sources */,
+				5E7B0657282FC05F00E91C2D /* ChannelViewData.swift in Sources */,
+				5E7B0651282FB97700E91C2D /* VideoPlaybackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
