@@ -20,7 +20,31 @@
 		5E7B0659282FC99200E91C2D /* ChannelVideosViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0658282FC99200E91C2D /* ChannelVideosViewData.swift */; };
 		5E7B065D282FFD7C00E91C2D /* VideoDetailsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B065C282FFD7C00E91C2D /* VideoDetailsViewData.swift */; };
 		5E7B065F28300D5A00E91C2D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B065E28300D5A00E91C2D /* Service.swift */; };
+		5E7B06692830C5DC00E91C2D /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06682830C5DC00E91C2D /* NetworkManagerTests.swift */; };
+		5E7B06702830D0E700E91C2D /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B066F2830D0E700E91C2D /* ServiceTests.swift */; };
+		5E7B06782830D69500E91C2D /* DailymotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06772830D69500E91C2D /* DailymotionUITests.swift */; };
+		5E7B067A2830D69500E91C2D /* DailymotionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06792830D69500E91C2D /* DailymotionUITestsLaunchTests.swift */; };
+		5E7B06812830D78100E91C2D /* DailymotionUITestsMainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06802830D78100E91C2D /* DailymotionUITestsMainUI.swift */; };
+		5E7B06832830D9A200E91C2D /* ChannelsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06822830D9A200E91C2D /* ChannelsViewTests.swift */; };
+		5E7B06852830DA5700E91C2D /* VideosViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06842830DA5700E91C2D /* VideosViewTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E7B066A2830C5DC00E91C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E7B0630282FB91500E91C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E7B0637282FB91500E91C2D;
+			remoteInfo = Dailymotion;
+		};
+		5E7B067B2830D69500E91C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E7B0630282FB91500E91C2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E7B0637282FB91500E91C2D;
+			remoteInfo = Dailymotion;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5E7B0638282FB91500E91C2D /* Dailymotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dailymotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,10 +61,33 @@
 		5E7B0658282FC99200E91C2D /* ChannelVideosViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVideosViewData.swift; sourceTree = "<group>"; };
 		5E7B065C282FFD7C00E91C2D /* VideoDetailsViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewData.swift; sourceTree = "<group>"; };
 		5E7B065E28300D5A00E91C2D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		5E7B06662830C5DC00E91C2D /* DailymotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7B06682830C5DC00E91C2D /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		5E7B066F2830D0E700E91C2D /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		5E7B06752830D69500E91C2D /* DailymotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailymotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7B06772830D69500E91C2D /* DailymotionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUITests.swift; sourceTree = "<group>"; };
+		5E7B06792830D69500E91C2D /* DailymotionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E7B06802830D78100E91C2D /* DailymotionUITestsMainUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUITestsMainUI.swift; sourceTree = "<group>"; };
+		5E7B06822830D9A200E91C2D /* ChannelsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewTests.swift; sourceTree = "<group>"; };
+		5E7B06842830DA5700E91C2D /* VideosViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5E7B0635282FB91500E91C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7B06632830C5DC00E91C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7B06722830D69500E91C2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				5E7B063A282FB91500E91C2D /* Dailymotion */,
+				5E7B06672830C5DC00E91C2D /* DailymotionTests */,
+				5E7B06762830D69500E91C2D /* DailymotionUITests */,
 				5E7B0639282FB91500E91C2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				5E7B0638282FB91500E91C2D /* Dailymotion.app */,
+				5E7B06662830C5DC00E91C2D /* DailymotionTests.xctest */,
+				5E7B06752830D69500E91C2D /* DailymotionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +169,27 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		5E7B06672830C5DC00E91C2D /* DailymotionTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B06682830C5DC00E91C2D /* NetworkManagerTests.swift */,
+				5E7B066F2830D0E700E91C2D /* ServiceTests.swift */,
+			);
+			path = DailymotionTests;
+			sourceTree = "<group>";
+		};
+		5E7B06762830D69500E91C2D /* DailymotionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B06772830D69500E91C2D /* DailymotionUITests.swift */,
+				5E7B06792830D69500E91C2D /* DailymotionUITestsLaunchTests.swift */,
+				5E7B06802830D78100E91C2D /* DailymotionUITestsMainUI.swift */,
+				5E7B06822830D9A200E91C2D /* ChannelsViewTests.swift */,
+				5E7B06842830DA5700E91C2D /* VideosViewTests.swift */,
+			);
+			path = DailymotionUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +210,42 @@
 			productReference = 5E7B0638282FB91500E91C2D /* Dailymotion.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5E7B06652830C5DC00E91C2D /* DailymotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7B066C2830C5DC00E91C2D /* Build configuration list for PBXNativeTarget "DailymotionTests" */;
+			buildPhases = (
+				5E7B06622830C5DC00E91C2D /* Sources */,
+				5E7B06632830C5DC00E91C2D /* Frameworks */,
+				5E7B06642830C5DC00E91C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E7B066B2830C5DC00E91C2D /* PBXTargetDependency */,
+			);
+			name = DailymotionTests;
+			productName = DailymotionTests;
+			productReference = 5E7B06662830C5DC00E91C2D /* DailymotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E7B06742830D69500E91C2D /* DailymotionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7B067D2830D69500E91C2D /* Build configuration list for PBXNativeTarget "DailymotionUITests" */;
+			buildPhases = (
+				5E7B06712830D69500E91C2D /* Sources */,
+				5E7B06722830D69500E91C2D /* Frameworks */,
+				5E7B06732830D69500E91C2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E7B067C2830D69500E91C2D /* PBXTargetDependency */,
+			);
+			name = DailymotionUITests;
+			productName = DailymotionUITests;
+			productReference = 5E7B06752830D69500E91C2D /* DailymotionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +258,14 @@
 				TargetAttributes = {
 					5E7B0637282FB91500E91C2D = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					5E7B06652830C5DC00E91C2D = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 5E7B0637282FB91500E91C2D;
+					};
+					5E7B06742830D69500E91C2D = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 5E7B0637282FB91500E91C2D;
 					};
 				};
 			};
@@ -167,6 +283,8 @@
 			projectRoot = "";
 			targets = (
 				5E7B0637282FB91500E91C2D /* Dailymotion */,
+				5E7B06652830C5DC00E91C2D /* DailymotionTests */,
+				5E7B06742830D69500E91C2D /* DailymotionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +296,20 @@
 			files = (
 				5E7B0643282FB91900E91C2D /* Preview Assets.xcassets in Resources */,
 				5E7B0640282FB91900E91C2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7B06642830C5DC00E91C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7B06732830D69500E91C2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +334,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E7B06622830C5DC00E91C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7B06692830C5DC00E91C2D /* NetworkManagerTests.swift in Sources */,
+				5E7B06702830D0E700E91C2D /* ServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7B06712830D69500E91C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7B06852830DA5700E91C2D /* VideosViewTests.swift in Sources */,
+				5E7B06832830D9A200E91C2D /* ChannelsViewTests.swift in Sources */,
+				5E7B067A2830D69500E91C2D /* DailymotionUITestsLaunchTests.swift in Sources */,
+				5E7B06812830D78100E91C2D /* DailymotionUITestsMainUI.swift in Sources */,
+				5E7B06782830D69500E91C2D /* DailymotionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E7B066B2830C5DC00E91C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E7B0637282FB91500E91C2D /* Dailymotion */;
+			targetProxy = 5E7B066A2830C5DC00E91C2D /* PBXContainerItemProxy */;
+		};
+		5E7B067C2830D69500E91C2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E7B0637282FB91500E91C2D /* Dailymotion */;
+			targetProxy = 5E7B067B2830D69500E91C2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5E7B0644282FB91900E91C2D /* Debug */ = {
@@ -377,6 +543,76 @@
 			};
 			name = Release;
 		};
+		5E7B066D2830C5DC00E91C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.DailymotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dailymotion.app/Dailymotion";
+			};
+			name = Debug;
+		};
+		5E7B066E2830C5DC00E91C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.DailymotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dailymotion.app/Dailymotion";
+			};
+			name = Release;
+		};
+		5E7B067E2830D69500E91C2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.DailymotionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dailymotion;
+			};
+			name = Debug;
+		};
+		5E7B067F2830D69500E91C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.DailymotionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dailymotion;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -394,6 +630,24 @@
 			buildConfigurations = (
 				5E7B0647282FB91900E91C2D /* Debug */,
 				5E7B0648282FB91900E91C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7B066C2830C5DC00E91C2D /* Build configuration list for PBXNativeTarget "DailymotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7B066D2830C5DC00E91C2D /* Debug */,
+				5E7B066E2830C5DC00E91C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7B067D2830D69500E91C2D /* Build configuration list for PBXNativeTarget "DailymotionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7B067E2830D69500E91C2D /* Debug */,
+				5E7B067F2830D69500E91C2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
