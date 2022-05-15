@@ -31,7 +31,7 @@ struct ChannelView: View {
                 service.getChannels()
             }
             .navigationTitle("channels-string")
-        }
+        }.navigationViewStyle(.stack)
     }
 }
 

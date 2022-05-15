@@ -29,7 +29,7 @@ struct ChannelVideosView: View {
                 service.getVideos()
             }
             .navigationTitle("videos-string")
-        }
+        }.navigationViewStyle(.stack)
     }
 }
 
