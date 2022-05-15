@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-struct VideoPlaybackView: View {
-    var body: some View {
-        Text("Video Playback view")
+struct VideoPlaybackView: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIVideoPlayer {
+        return UIVideoPlayer()
     }
-}
-
-struct VideoPlaybackView_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoPlaybackView()
+    
+    func updateUIView(_ uiView: UIVideoPlayer, context: Context) {
+        
     }
 }

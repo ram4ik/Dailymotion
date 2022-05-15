@@ -14,15 +14,17 @@ struct VideoDetailsView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
-                AsyncImage(url: URL(string: service.videoDetails?.thumbnail720_URL ?? "")) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                } placeholder: {
-                    ProgressView()
+                NavigationLink(destination: PlayerView()) {
+                    AsyncImage(url: URL(string: service.videoDetails?.thumbnail720_URL ?? "")) { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .cornerRadius(16)
+                    .padding()
                 }
-                .cornerRadius(16)
-                .padding()
                 
                 VStack(alignment: .leading) {
                     Text(service.videoDetails?.title ?? "n/a")
