@@ -27,6 +27,9 @@
 		5E7B06812830D78100E91C2D /* DailymotionUITestsMainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06802830D78100E91C2D /* DailymotionUITestsMainUI.swift */; };
 		5E7B06832830D9A200E91C2D /* ChannelsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06822830D9A200E91C2D /* ChannelsViewTests.swift */; };
 		5E7B06852830DA5700E91C2D /* VideosViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06842830DA5700E91C2D /* VideosViewTests.swift */; };
+		5E7B06892831037F00E91C2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B068B2831037F00E91C2D /* Localizable.strings */; };
+		5E7B068C2831058300E91C2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B068B2831037F00E91C2D /* Localizable.strings */; };
+		5E7B068D2831058500E91C2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B068B2831037F00E91C2D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,10 @@
 		5E7B06802830D78100E91C2D /* DailymotionUITestsMainUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUITestsMainUI.swift; sourceTree = "<group>"; };
 		5E7B06822830D9A200E91C2D /* ChannelsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewTests.swift; sourceTree = "<group>"; };
 		5E7B06842830DA5700E91C2D /* VideosViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewTests.swift; sourceTree = "<group>"; };
+		5E7B068A2831037F00E91C2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E7B068E2831067000E91C2D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E7B068F2831068500E91C2D /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5E7B06902831069100E91C2D /* et-EE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "et-EE"; path = "et-EE.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +127,7 @@
 		5E7B063A282FB91500E91C2D /* Dailymotion */ = {
 			isa = PBXGroup;
 			children = (
+				5E7B06862831033600E91C2D /* Localization */,
 				5E7B0653282FBB9D00E91C2D /* Services */,
 				5E7B0652282FBB9600E91C2D /* Models */,
 				5E7B0649282FB92D00E91C2D /* Views */,
@@ -188,6 +196,14 @@
 				5E7B06842830DA5700E91C2D /* VideosViewTests.swift */,
 			);
 			path = DailymotionUITests;
+			sourceTree = "<group>";
+		};
+		5E7B06862831033600E91C2D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B068B2831037F00E91C2D /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +292,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				et,
+				"et-EE",
 			);
 			mainGroup = 5E7B062F282FB91500E91C2D;
 			productRefGroup = 5E7B0639282FB91500E91C2D /* Products */;
@@ -295,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7B0643282FB91900E91C2D /* Preview Assets.xcassets in Resources */,
+				5E7B06892831037F00E91C2D /* Localizable.strings in Resources */,
 				5E7B0640282FB91900E91C2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7B068D2831058500E91C2D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7B068C2831058300E91C2D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +392,26 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		5E7B068B2831037F00E91C2D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7B068A2831037F00E91C2D /* en */,
+				5E7B068E2831067000E91C2D /* ru */,
+				5E7B068F2831068500E91C2D /* et */,
+				5E7B06902831069100E91C2D /* et-EE */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		5E7B0644282FB91900E91C2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -435,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

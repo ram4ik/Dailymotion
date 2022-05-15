@@ -28,7 +28,7 @@ struct ChannelVideosView: View {
             .onAppear() {
                 getVideos()
             }
-            .navigationTitle("Videos")
+            .navigationTitle("videos-string")
         }
     }
     

@@ -21,7 +21,7 @@ class VideosViewTests: XCTestCase {
     
     func testAppMainView() {
         
-        let channelTabButton: XCUIElement = app.buttons["Channel"]
+        let channelTabButton: XCUIElement = app.buttons["Channels"]
         let videosTabButton: XCUIElement = app.buttons["Videos"]
         
         videosTabButton.tap()

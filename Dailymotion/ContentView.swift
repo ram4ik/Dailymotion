@@ -12,11 +12,11 @@ struct ContentView: View {
         TabView {
             ChannelView()
                 .tabItem {
-                    Label("Channel", systemImage: "list.dash")
+                    Label("channels-string", systemImage: "list.dash")
                 }
             ChannelVideosView()
                 .tabItem {
-                    Label("Videos", systemImage: "video")
+                    Label("videos-string", systemImage: "video")
                 }
         }
     }
@@ -24,6 +24,15 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .environment(\.locale, Locale.init(identifier: "en"))
+            ContentView()
+                .environment(\.locale, Locale.init(identifier: "ee"))
+            ContentView()
+                .environment(\.locale, Locale.init(identifier: "ee-ET"))
+            ContentView()
+                .environment(\.locale, Locale.init(identifier: "ru"))
+        }
     }
 }

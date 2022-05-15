@@ -30,7 +30,7 @@ struct ChannelView: View {
             .onAppear() {
                 getChannels()
             }
-            .navigationTitle("Channels")
+            .navigationTitle("channels-string")
         }
     }
     
