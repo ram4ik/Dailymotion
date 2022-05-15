@@ -25,7 +25,7 @@ class UIVideoPlayer: UIView {
         guard let url = URL(string: randomVideos.randomElement()!) else { return }
         
         let player = AVPlayer(url: url)
-        player.isMuted = true
+        player.isMuted = false
         player.play()
         
         playerLayer.player = player

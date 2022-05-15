@@ -11,7 +11,6 @@ struct PlayerView: View {
     var body: some View {
         VStack {
             VideoPlaybackView()
-                .padding()
         }
     }
 }
