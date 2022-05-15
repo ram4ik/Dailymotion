@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ChannelView()
+            ChannelView(service: Service())
                 .tabItem {
                     Label("channels-string", systemImage: "list.dash")
                 }
-            ChannelVideosView()
+            ChannelVideosView(service: Service())
                 .tabItem {
                     Label("videos-string", systemImage: "video")
                 }

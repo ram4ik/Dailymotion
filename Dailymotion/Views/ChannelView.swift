@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ChannelView: View {
-    @State private var channelData: [Channel] = []
+    @ObservedObject var service: Service
     
     var body: some View {
         NavigationView {
-            List(channelData) { channel in
+            List(service.channelData) { channel in
                 VStack(alignment: .leading) {
                     Text(channel.name)
                         .font(.title)
@@ -25,34 +25,18 @@ struct ChannelView: View {
             }
             .listStyle(PlainListStyle())
             .refreshable {
-                getChannels()
+                service.getChannels()
             }
             .onAppear() {
-                getChannels()
+                service.getChannels()
             }
             .navigationTitle("channels-string")
-        }
-    }
-    
-    private func getChannels() {
-        guard let url = URL(string: "https://api.dailymotion.com/channels") else { fatalError("Invalid URL") }
-        
-        let networkManager = NetworkManager()
-        
-        networkManager.request(fromURL: url) { (result: Result<ChannelViewData, Error>) in
-            switch result {
-            case .success(let data):
-                debugPrint("Got data: \(data)")
-                channelData = data.list
-            case .failure(let error):
-                debugPrint("Error: \(error.localizedDescription)")
-            }
         }
     }
 }
 
 struct ChannelView_Previews: PreviewProvider {
     static var previews: some View {
-        ChannelView()
+        ChannelView(service: Service())
     }
 }

@@ -127,6 +127,7 @@
 		5E7B063A282FB91500E91C2D /* Dailymotion */ = {
 			isa = PBXGroup;
 			children = (
+				5E7B069128310F3F00E91C2D /* ViewModel */,
 				5E7B06862831033600E91C2D /* Localization */,
 				5E7B0653282FBB9D00E91C2D /* Services */,
 				5E7B0652282FBB9600E91C2D /* Models */,
@@ -172,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				5E7B0654282FBBB300E91C2D /* NetworkManager.swift */,
-				5E7B065E28300D5A00E91C2D /* Service.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,6 +204,14 @@
 				5E7B068B2831037F00E91C2D /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		5E7B069128310F3F00E91C2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B065E28300D5A00E91C2D /* Service.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
