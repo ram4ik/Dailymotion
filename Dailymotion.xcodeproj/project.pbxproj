@@ -32,6 +32,8 @@
 		5E7B068D2831058500E91C2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7B068B2831037F00E91C2D /* Localizable.strings */; };
 		5E7B06932831188F00E91C2D /* UIVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06922831188F00E91C2D /* UIVideoPlayer.swift */; };
 		5E7B069528311A1300E91C2D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069428311A1300E91C2D /* PlayerView.swift */; };
+		5E7B0697283288B600E91C2D /* ChannelVideosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0696283288B600E91C2D /* ChannelVideosData.swift */; };
+		5E7B0699283289A900E91C2D /* RenderedChannelVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0698283289A900E91C2D /* RenderedChannelVideosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		5E7B06902831069100E91C2D /* et-EE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "et-EE"; path = "et-EE.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5E7B06922831188F00E91C2D /* UIVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVideoPlayer.swift; sourceTree = "<group>"; };
 		5E7B069428311A1300E91C2D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		5E7B0696283288B600E91C2D /* ChannelVideosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVideosData.swift; sourceTree = "<group>"; };
+		5E7B0698283289A900E91C2D /* RenderedChannelVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderedChannelVideosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				5E7B0650282FB97700E91C2D /* VideoPlaybackView.swift */,
 				5E7B06922831188F00E91C2D /* UIVideoPlayer.swift */,
 				5E7B069428311A1300E91C2D /* PlayerView.swift */,
+				5E7B0698283289A900E91C2D /* RenderedChannelVideosView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				5E7B0656282FC05F00E91C2D /* ChannelViewData.swift */,
 				5E7B0658282FC99200E91C2D /* ChannelVideosViewData.swift */,
 				5E7B065C282FFD7C00E91C2D /* VideoDetailsViewData.swift */,
+				5E7B0696283288B600E91C2D /* ChannelVideosData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -359,6 +365,8 @@
 				5E7B06932831188F00E91C2D /* UIVideoPlayer.swift in Sources */,
 				5E7B064D282FB95900E91C2D /* ChannelVideosView.swift in Sources */,
 				5E7B0659282FC99200E91C2D /* ChannelVideosViewData.swift in Sources */,
+				5E7B0697283288B600E91C2D /* ChannelVideosData.swift in Sources */,
+				5E7B0699283289A900E91C2D /* RenderedChannelVideosView.swift in Sources */,
 				5E7B064F282FB96900E91C2D /* VideoDetailsView.swift in Sources */,
 				5E7B064B282FB94500E91C2D /* ChannelView.swift in Sources */,
 				5E7B0655282FBBB300E91C2D /* NetworkManager.swift in Sources */,

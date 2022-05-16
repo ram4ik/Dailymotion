@@ -11,6 +11,7 @@ class Service: ObservableObject {
     @Published var channelData: [Channel] = []
     @Published var videoData: [Video] = []
     @Published var videoDetails: VideoDetailsViewData?
+    @Published var channelVideos: [ChannelVideo] = []
     
     let networkManager = NetworkManager()
     
@@ -50,6 +51,20 @@ class Service: ObservableObject {
             case .success(let data):
                 debugPrint("Got data: \(data)")
                 self.videoDetails = data
+            case .failure(let error):
+                debugPrint("Error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func getChannelVideos(channelId: String) {
+        guard let url = URL(string: "https://api.dailymotion.com/channel/\(channelId)/videos") else { fatalError("Invalid URL") }
+
+        networkManager.request(fromURL: url) { (result: Result<ChannelVideosData, Error>) in
+            switch result {
+            case .success(let data):
+                debugPrint("Got data: \(data)")
+                self.channelVideos = data.list
             case .failure(let error):
                 debugPrint("Error: \(error.localizedDescription)")
             }
