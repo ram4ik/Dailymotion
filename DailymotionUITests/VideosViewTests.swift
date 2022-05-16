@@ -33,4 +33,16 @@ class VideosViewTests: XCTestCase {
         
         app.swipeDown()
     }
+    
+    func testVideosList() {
+        
+        app.buttons["Videos"].tap()
+        
+        let videosListCellCount = app.tables.cells.count
+        XCTAssertTrue(videosListCellCount > 0)
+        
+        let firstCell = app.tables.cells.element(boundBy: 0)
+        XCTAssertTrue(firstCell.exists)
+        firstCell.tap()
+    }
 }
