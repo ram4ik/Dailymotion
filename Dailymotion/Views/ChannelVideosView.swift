@@ -12,13 +12,18 @@ struct ChannelVideosView: View {
     
     var body: some View {
         NavigationView {
-            List(service.videoData) { video in
-                NavigationLink {
-                    VideoDetailsView(videoId: video.id, service: Service())
-                } label: {
-                    Text(video.title)
-                        .bold()
-                        .padding()
+            ZStack {
+                List(service.videoData) { video in
+                    NavigationLink {
+                        VideoDetailsView(videoId: video.id, service: Service())
+                    } label: {
+                        Text(video.title)
+                            .bold()
+                            .padding()
+                    }
+                }
+                if service.videoData.isEmpty {
+                    ProgressView()
                 }
             }
             .listStyle(PlainListStyle())

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct PlayerView: View {
     var body: some View {
-        VStack {
+        ZStack {
+            ProgressView()
             VideoPlaybackView()
         }
     }

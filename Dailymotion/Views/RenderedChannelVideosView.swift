@@ -13,14 +13,21 @@ struct RenderedChannelVideosView: View {
     @ObservedObject var service: Service
     
     var body: some View {
-        List(service.channelVideos) { video in
-            VStack(alignment: .leading) {
-                Text(video.title)
-                    .bold()
-                Text("Owner: \(video.owner)")
-                    .foregroundColor(.secondary)
-                    .padding(.top, 5)
-            }.padding()
+        ZStack {
+            List(service.channelVideos) { video in
+                NavigationLink(destination: PlayerView()) {
+                    VStack(alignment: .leading) {
+                        Text(video.title)
+                            .bold()
+                        Text("Owner: \(video.owner)")
+                            .foregroundColor(.secondary)
+                            .padding(.top, 5)
+                    }.padding()
+                }
+            }
+            if service.channelVideos.isEmpty {
+                ProgressView()
+            }
         }
         .listStyle(PlainListStyle())
         .refreshable {
