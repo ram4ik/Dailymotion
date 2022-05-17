@@ -11,13 +11,6 @@ import UIKit
 
 class UIVideoPlayerController: UIViewController {
     
-    let randomVideos = [
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,7 +18,7 @@ class UIVideoPlayerController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard let url = URL(string: randomVideos.randomElement()!) else { return }
+        guard let url = URL(string: PreConfiguredVideos.randomVideos.randomElement()!) else { return }
         
         let player = AVPlayer(url: url)
         
