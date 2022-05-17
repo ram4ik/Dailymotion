@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct PlayerControllerView: View {
+    @StateObject private var networkMonitor = NetworkMonitor()
+    
     var body: some View {
         ZStack {
-            ProgressView()
+            VStack {
+                ProgressView()
+                if !networkMonitor.isActive {
+                    Text("no-network-string")
+                        .padding()
+                }
+            }
             VStack {
                 VideoPlaybackControllerView()
             }

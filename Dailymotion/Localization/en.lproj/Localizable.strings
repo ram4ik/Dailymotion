@@ -1,2 +1,3 @@
 "channels-string" = "Channels";
 "videos-string" = "Videos";
+"no-network-string" = "No network! Pull down to refresh!";

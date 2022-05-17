@@ -11,6 +11,7 @@ struct RenderedChannelVideosView: View {
     let channelId: String
     let name: String
     @ObservedObject var service: Service
+    @StateObject private var networkMonitor = NetworkMonitor()
     
     var body: some View {
         ZStack {
@@ -26,7 +27,13 @@ struct RenderedChannelVideosView: View {
                 }
             }
             if service.channelVideos.isEmpty {
-                ProgressView()
+                VStack {
+                    ProgressView()
+                    if !networkMonitor.isActive {
+                        Text("no-network-string")
+                            .padding()
+                    }
+                }
             }
         }
         .listStyle(PlainListStyle())

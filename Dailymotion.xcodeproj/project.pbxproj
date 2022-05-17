@@ -38,6 +38,7 @@
 		5E7B069D2833627C00E91C2D /* VideoPlaybackControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */; };
 		5E7B069F2833669D00E91C2D /* PlayerControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */; };
 		5E7B06A228338BD500E91C2D /* PreConfiguredVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */; };
+		5EEFE460283428DD002F0640 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFE45F283428DD002F0640 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaybackControllerView.swift; sourceTree = "<group>"; };
 		5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControllerView.swift; sourceTree = "<group>"; };
 		5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreConfiguredVideos.swift; sourceTree = "<group>"; };
+		5EEFE45F283428DD002F0640 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				5E7B0654282FBBB300E91C2D /* NetworkManager.swift */,
+				5EEFE45F283428DD002F0640 /* NetworkMonitor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				5E7B069F2833669D00E91C2D /* PlayerControllerView.swift in Sources */,
 				5E7B065F28300D5A00E91C2D /* Service.swift in Sources */,
 				5E7B0657282FC05F00E91C2D /* ChannelViewData.swift in Sources */,
+				5EEFE460283428DD002F0640 /* NetworkMonitor.swift in Sources */,
 				5E7B069B2833611B00E91C2D /* UIVideoPlayerController.swift in Sources */,
 				5E7B0651282FB97700E91C2D /* VideoPlaybackView.swift in Sources */,
 			);

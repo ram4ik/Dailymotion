@@ -1,2 +1,3 @@
 "channels-string" = "Каналы";
 "videos-string" = "Видео";
+"no-network-string" = "Нет сети! Потяните вниз, чтобы обновить!";

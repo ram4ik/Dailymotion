@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChannelVideosView: View {
     @ObservedObject var service: Service
+    @StateObject private var networkMonitor = NetworkMonitor()
     
     var body: some View {
         NavigationView {
@@ -23,7 +24,13 @@ struct ChannelVideosView: View {
                     }
                 }
                 if service.videoData.isEmpty {
-                    ProgressView()
+                    VStack {
+                        ProgressView()
+                        if !networkMonitor.isActive {
+                            Text("no-network-string")
+                                .padding()
+                        }
+                    }
                 }
             }
             .listStyle(PlainListStyle())

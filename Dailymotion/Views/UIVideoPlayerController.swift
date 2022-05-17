@@ -25,6 +25,6 @@ class UIVideoPlayerController: UIViewController {
         let vc = AVPlayerViewController()
         vc.player = player
         vc.player?.play()
-        present(vc, animated: true)
+        present(vc, animated: false)
     }
 }
