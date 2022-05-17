@@ -15,7 +15,7 @@ struct RenderedChannelVideosView: View {
     var body: some View {
         ZStack {
             List(service.channelVideos) { video in
-                NavigationLink(destination: PlayerView()) {
+                NavigationLink(destination: PlayerControllerView()) {
                     VStack(alignment: .leading) {
                         Text(video.title)
                             .bold()
