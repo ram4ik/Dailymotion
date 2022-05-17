@@ -12,17 +12,10 @@ class UIVideoPlayer: UIView {
     
     var playerLayer = AVPlayerLayer()
     
-    let randomVideos = [
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
-    ]
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        guard let url = URL(string: randomVideos.randomElement()!) else { return }
+        guard let url = URL(string: PreConfiguredVideos.randomVideos.randomElement()!) else { return }
         
         let player = AVPlayer(url: url)
         player.isMuted = false

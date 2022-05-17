@@ -37,6 +37,7 @@
 		5E7B069B2833611B00E91C2D /* UIVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069A2833611B00E91C2D /* UIVideoPlayerController.swift */; };
 		5E7B069D2833627C00E91C2D /* VideoPlaybackControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */; };
 		5E7B069F2833669D00E91C2D /* PlayerControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */; };
+		5E7B06A228338BD500E91C2D /* PreConfiguredVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		5E7B069A2833611B00E91C2D /* UIVideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVideoPlayerController.swift; sourceTree = "<group>"; };
 		5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaybackControllerView.swift; sourceTree = "<group>"; };
 		5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControllerView.swift; sourceTree = "<group>"; };
+		5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreConfiguredVideos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		5E7B063A282FB91500E91C2D /* Dailymotion */ = {
 			isa = PBXGroup;
 			children = (
+				5E7B06A028338BA400E91C2D /* Constants */,
 				5E7B069128310F3F00E91C2D /* ViewModel */,
 				5E7B06862831033600E91C2D /* Localization */,
 				5E7B0653282FBB9D00E91C2D /* Services */,
@@ -233,6 +236,14 @@
 				5E7B065E28300D5A00E91C2D /* Service.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5E7B06A028338BA400E91C2D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7B06932831188F00E91C2D /* UIVideoPlayer.swift in Sources */,
+				5E7B06A228338BD500E91C2D /* PreConfiguredVideos.swift in Sources */,
 				5E7B064D282FB95900E91C2D /* ChannelVideosView.swift in Sources */,
 				5E7B0659282FC99200E91C2D /* ChannelVideosViewData.swift in Sources */,
 				5E7B0697283288B600E91C2D /* ChannelVideosData.swift in Sources */,
