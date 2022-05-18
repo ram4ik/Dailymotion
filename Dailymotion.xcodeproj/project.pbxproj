@@ -34,7 +34,6 @@
 		5E7B069528311A1300E91C2D /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069428311A1300E91C2D /* PlayerView.swift */; };
 		5E7B0697283288B600E91C2D /* ChannelVideosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0696283288B600E91C2D /* ChannelVideosData.swift */; };
 		5E7B0699283289A900E91C2D /* RenderedChannelVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B0698283289A900E91C2D /* RenderedChannelVideosView.swift */; };
-		5E7B069B2833611B00E91C2D /* UIVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069A2833611B00E91C2D /* UIVideoPlayerController.swift */; };
 		5E7B069D2833627C00E91C2D /* VideoPlaybackControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */; };
 		5E7B069F2833669D00E91C2D /* PlayerControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */; };
 		5E7B06A228338BD500E91C2D /* PreConfiguredVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */; };
@@ -90,7 +89,6 @@
 		5E7B069428311A1300E91C2D /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		5E7B0696283288B600E91C2D /* ChannelVideosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVideosData.swift; sourceTree = "<group>"; };
 		5E7B0698283289A900E91C2D /* RenderedChannelVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderedChannelVideosView.swift; sourceTree = "<group>"; };
-		5E7B069A2833611B00E91C2D /* UIVideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVideoPlayerController.swift; sourceTree = "<group>"; };
 		5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaybackControllerView.swift; sourceTree = "<group>"; };
 		5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControllerView.swift; sourceTree = "<group>"; };
 		5E7B06A128338BD500E91C2D /* PreConfiguredVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreConfiguredVideos.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				5E7B06922831188F00E91C2D /* UIVideoPlayer.swift */,
 				5E7B069428311A1300E91C2D /* PlayerView.swift */,
 				5E7B0698283289A900E91C2D /* RenderedChannelVideosView.swift */,
-				5E7B069A2833611B00E91C2D /* UIVideoPlayerController.swift */,
 				5E7B069C2833627C00E91C2D /* VideoPlaybackControllerView.swift */,
 				5E7B069E2833669D00E91C2D /* PlayerControllerView.swift */,
 			);
@@ -403,7 +400,6 @@
 				5E7B065F28300D5A00E91C2D /* Service.swift in Sources */,
 				5E7B0657282FC05F00E91C2D /* ChannelViewData.swift in Sources */,
 				5EEFE460283428DD002F0640 /* NetworkMonitor.swift in Sources */,
-				5E7B069B2833611B00E91C2D /* UIVideoPlayerController.swift in Sources */,
 				5E7B0651282FB97700E91C2D /* VideoPlaybackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
